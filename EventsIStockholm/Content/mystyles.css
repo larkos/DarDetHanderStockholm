@@ -1,0 +1,626 @@
+﻿body {
+}
+
+@font-face {  
+    font-family: 'BebasRegular';  
+    src: url('font/BEBAS___-webfont.eot');  
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),     
+    url('font/BEBAS___-webfont.woff') format('woff'),     
+    url('font/BEBAS___-webfont.ttf') format('truetype'),     
+    url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');  
+    font-weight: normal;  
+    font-style: normal;  
+    }  
+     
+html,body{ 
+    font-family: 'BebasRegular';    
+    width:100%;     
+    height:100%;  
+}
+
+.navigation {   
+    position:fixed;     
+    z-index:1;      
+    top:20px;  
+}  
+.navigation li {    
+    color:#333333;      
+    display:block;      
+    padding: 0 10px;    
+    line-height:30px;   
+    margin-bottom:2px;      
+    font-weight:bold;   
+    -webkit-transition: all .2s ease-in-out;    
+    border-bottom:1px solid black;      
+    text-align:left;    
+    width:53px;  
+}  
+.navigation li:hover,
+.active {   
+    font-size:25px;     
+    cursor:pointer;     
+    width:100px!important;  
+}
+
+.envatologo {  
+    position:fixed;  
+    top:50%;  
+    left:50%;  
+    width:446px;  
+    margin-top:-41px;  
+    margin-left:-223px;  
+    z-index:1;  
+}
+
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper {
+    width:960px;
+    height:200px;
+    margin:0 auto;
+    position:relative;
+}
+.slideno {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size:100px;
+    font-weight:bold;
+    color:rgba(255,255,255,0.3);
+}
+
+.button{
+    display:block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    background-color:#333333;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+}
+.button:hover{
+    background-color:#494949;
+    cursor:pointer;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+    background-color:red;
+    text-align:center;
+     
+}
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+    background-color:blue;
+     text-align:center;
+}
+#slide2 img:first-child{
+    position:absolute;
+top: 700px;
+left: -150px;
+}
+#slide2 img:nth-child(2){
+    position:absolute;
+    top:300px;
+    left:100px;
+}
+#slide2 img:nth-child(3){
+    position:absolute;
+    top:600px;
+    left:300px;
+}
+#slide2 img:nth-child(4){
+    position:absolute;
+    top:400px;
+    left:300px;
+}
+#slide2 img:nth-child(5){
+    position:absolute;
+    top:600px;
+    right:300px;
+}
+#slide2 img:nth-child(6){
+    position:absolute;
+    top:600px;
+    right:300px;
+}
+#slide2 img:nth-child(7){
+    position:absolute;
+    top:400px;
+    right:100px;
+}
+#slide2 img:nth-child(8){
+    position:absolute;
+    top:100px;
+    right:300px;
+}
+
+/****************************** SLIDE 3 *******************************/ 
+#slide3 {   
+    background-color:green;
+    text-align:center;
+}  
+#slide3 img:first-child {   
+    position:absolute;  
+    top: 700px;  
+    left: 300px; 
+}  
+#slide3 img:nth-child(2){   
+    position:absolute;      
+    top:100px;      
+    left:100px;  
+}  
+#slide3 img:nth-child(3){   
+    position:absolute;      
+    top:150px;      
+    left:300px;  
+}  
+#slide3 img:nth-child(4){   
+    position:absolute;      
+    top:450px;      
+    left:300px; 
+}  
+#slide3 img:nth-child(5){   
+    position:absolute;      
+    top:200px;      
+    right:300px;  
+}  
+#slide3 img:nth-child(6){   
+    position:absolute;      
+    top:100px;      
+    right:300px;  
+}
+
+/******************************
+ SLIDE 4 
+*******************************/
+ 
+#slide4{
+    text-align:center;
+    background-color:yellow;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#slide4 .parallaxbg{
+    position:absolute;
+    right:40px;
+    top:40px;
+    font-size:28px;
+    color:rgba(51,51,51,0.3);
+}
+
+#Myslide{
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Polaroid image effekt*/
+
+.polaroid {
+  position: relative;
+  height:90%;
+  width: 220px;
+}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+ 
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+
+.structure{
+    
+    width:inherit;
+    height:inherit;
+    position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*menu*/
+
+/*thead cool effect*/
+.grid-wrap {
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1260px;
+}
+
+.grid {
+    margin: 30px auto;
+    padding: 0;
+    min-height: 500px;
+    list-style: none;
+}
+
+.js .grid {
+    background: url(../img/loading.gif) no-repeat 50% 100px;
+}
+ 
+.js .grid.loaded {
+    background: none;
+}
+
+.grid li {
+    display: inline-block;
+    overflow: hidden;
+    width: 314px;
+    text-align: left;
+    vertical-align: top;
+}
+ 
+.js .grid li {
+    display: none;
+    float: left;
+}
+ 
+.js .grid.loaded li {
+    display: block;
+}
+
+.title-box h2 {
+    display: block;
+    margin: 7px;
+    padding: 20px;
+    background: #2E3444;
+    color: #D3EEE2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+ 
+.title-box h2 a {
+    display: block;
+    font-weight: 900;
+}
+ 
+.title-box h2 a:hover {
+    color: #D3EEE2;
+}
+
+.grid li > a,
+.grid li img {
+    display: block;
+    outline: none;
+    border: none;
+}
+
+.grid li > a {
+    position: relative;
+    overflow: hidden;
+    margin: 7px;
+}
+.grid .curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #96cdc8;
+}
+
+.grid.swipe-right .curtain {
+    transform: translate3d(-100%,0,0);
+}
+ 
+.grid.swipe-down .curtain {
+    transform: translate3d(0,-100%,0);
+}
+ 
+.grid.swipe-rotate .curtain {
+    width: 200%;
+    height: 200%;
+    transform: rotate3d(0,0,1,90deg);
+    transform-origin: top left;
+}
+
+.grid .curtain::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    content: '';
+}
+ 
+.grid.swipe-right .curtain::after,
+.grid.swipe-rotate .curtain::after {
+    left: -100%;
+}
+ 
+.grid.swipe-down .curtain::after {
+    top: -100%;
+}
+
+.grid li h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background: #2E3444;
+    color: #D3EEE2;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1em;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.grid li > a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100.5%; 
+    border: 0px solid transparent;
+    background: transparent;
+    content: '';
+    transition: border-width 0.2s, border-color 0.2s;
+}
+ 
+/* Hover effects */
+.grid li.shown:hover h3 {
+    color: #fff;
+    transform: translate3d(0,-30px,0);
+}
+ 
+.grid li.shown:hover > a::before {
+    border-width: 14px;
+    border-color: #2E3444;
+}
+
+/* Swipe right */
+.grid.swipe-right li.animate .curtain {
+    animation: swipeRight 1.5s cubic-bezier(0.6,0,0.4,1) forwards;
+}
+ 
+@keyframes swipeRight {
+    50%, 60% { transform: translate(0); }
+    100% { transform: translate3d(100%,0,0); }
+}
+
+/* Swipe down */
+.grid.swipe-down li.animate .curtain {
+    animation: swipeDown 1.5s cubic-bezier(0.6,0,0.4,1) forwards;
+}
+ 
+@keyframes swipeDown {
+    50%, 60% { transform: translate(0); }
+    100% { transform: translate3d(0,-100%,0); }
+}
+
+/* Swipe rotate */
+.grid.swipe-rotate li.animate .curtain {
+    animation: swipeRotate 1.5s ease forwards;
+}
+ 
+@keyframes swipeRotate {
+    50%, 60% { transform: rotate3d(0,0,1,0deg); }
+    100% { transform: rotate3d(0,0,1,-90deg); }
+}
+
+.grid li.animate .curtain::after {
+    animation: fadeOut 1.5s ease forwards;
+    animation-delay: inherit;
+}
+ 
+@keyframes fadeOut {
+    50%, 60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.js .grid li img,
+.js .grid li h3 {
+    visibility: hidden;
+}
+ 
+.grid li.animate img,
+.grid li.animate h3 {
+    animation: showMe 1.5s step-end forwards;
+}
+ 
+@keyframes showMe {
+    from { visibility: hidden; }
+    60%, 100% { visibility: visible; }
+}
+ 
+.grid li.shown img,
+.grid li.shown h3 {
+    visibility: visible;
+}
+
+
+
+
+
+.slidecontentwrapper{
+    width:1000px;
+    height:250px;
+    float:right;
+    text-align:center;
+}
+.slidecontentbanner{
+    width:50%;
+    height:50%;
+    float:right
+}
+.slidecontenttext{
+    width:50%;
+    height:50%;
+    float:right;
+}
+
+
+.Advertise{
+    width:100%;
+    height:300px;
+    border:dashed;
+    overflow:hidden;
+    align-content:center;
+}
+.polaroidArea{
+   width:300px;
+   height:100%;
+   float:left;
+}
+
+.textarea{
+    
+    height:400px;
+    
+}
+
+
+/*Detta låg i layouts style*/
+ nav {
+            
+            width: 100%;
+            text-align:center;
+            position:center;
+            float:none;
+            text-align:center;
+
+        }
+        .Mymenu{
+            width:100%;
+            float:none;
+            text-align:center;
+        }
+
+        #menutable{
+            width:60%;
+        }
+        menu {
+            border-radius: 3px;
+            width:inherit;
+           
+        }
+
+            menu:after, menu:before {
+                display: block;
+                content: ' ';
+            }
+
+            menu:after {
+                clear: both;
+            }
+
+        li {
+            list-style-type: none;
+            background: linear-gradient(rgba(220,220,255,0.4) 85%, rgba(255,255,255,0.5) 100%);
+            float: left;
+            cursor: pointer;
+            padding: 3px 10px;
+            border-top: 2px solid rgba(200,200,255,0.5);
+            border-bottom: 2px solid rgba(50,50,50,0.4);
+            width:22%;
+           
+        }
+
+            li:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+
+            li:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+
+        a {
+            display: block;
+            padding: 10px 13px;
+            font-size: 26px;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+            top: 0;
+            color: #FFF;
+            transition: all .4s;
+        }
+
+        li:hover a {
+            top: -20px;
+            color: #4eacff;
+            background-color: #fff;
+            box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7);
+            transition: all .4s;
+        }
+
+        li a:after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 42%;
+            border-style: solid;
+            border-color: transparent;
+            border-width: 5px 5px 0 5px;
+            transition: all .4s;
+        }
+
+        li:hover a:after {
+            border-color: white transparent transparent transparent;
+            transition: all .4s;
+        }
+        /*************************************/
+        .menu2 {
+            width: 100%;
+            
+        }
+
+            .menu2 a {
+                font-family: georgia;
+                font-size: 14px;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+
+            .menu2 li {
+                border-right: 1px solid rgba(200,200,255,0.5);
+                border-left: 1px solid rgba(40,40,40,0.2);
+            }
+
+        .selected {
+            top: -20px;
+            color: #4eacff;
+            background-color: #fff;
+            box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.7);
+            transition: all .4s;
+        }
+
+            .selected:after {
+                border-color: white transparent transparent transparent;
+                transition: all .4s;
+            }

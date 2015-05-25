@@ -1,0 +1,10 @@
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\EventsIStockholm.dll.config
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\EventsIStockholm.dll
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\EventsIStockholm.pdb
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\EntityFramework.SqlServer.dll
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\System.Web.Helpers.dll
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\EntityFramework.SqlServer.xml
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\bin\System.Web.Helpers.xml
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\obj\Debug\EventsIStockholm.dll
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\obj\Debug\EventsIStockholm.pdb
+C:\Users\Larkos\EventsIStockholm\EventsIStockholm\obj\Debug\EventsIStockholm.csprojResolveAssemblyReference.cache

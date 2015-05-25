@@ -1,0 +1,52 @@
+﻿@model List<EventsIStockholm.Models.MyEvent>
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Create a parallax Website using Stellar.js</title>
+
+    @*<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/mystyles.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="~/js/jquery.stellar.js"></script>
+    <script type="text/javascript" src="~/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="~/js/jquery.easing.1.3.js"></script>
+
+    <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">*@
+    <script>
+      
+    </script>
+
+</head>
+
+<body>
+  @for (int i = 0; i < Model.Count(); i++)
+  {
+      <div class="Advertise">
+          <div class="polaroidArea">
+              <div class="polaroid">
+                  <a href="@Model[i].EventUrl"><img class="pimpedevents" src="@Model[i].ImageUrl" width="250" height="250"></a>
+                  <p><a href="@Model[i].EventUrl" style="color:firebrick;font-size:medium">@Model[i].EventDate</a></p>
+                      
+                  
+              </div>
+              
+          </div>
+          <div class="textarea">
+         
+              @Model[i].EventName
+          
+              @Html.Raw(@Model[i].LongDescription)
+          </div>
+          
+      </div>
+    
+      
+      
+  }
+</body>
+</html>

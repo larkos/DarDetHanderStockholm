@@ -1,0 +1,92 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+#intro{
+    background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
+    color: white;
+    height: 600px;
+    margin: 0;
+    padding: 160px 0 0 0;
+}
+
+.story{
+    margin: 0 auto;
+    min-width: 980px;
+    width: 980px;
+}
+
+#second .bg{
+    background: url(images/trainers.png) 50% 0 no-repeat fixed;
+    
+    position: absolute;
+    
+    z-index: 200;
+}
+
+#fourth{
+    /*background: url(images/bubbles2.png), url(images/bubbles2.png), url(images/bubbles1.png), url(images/fourthBG.jpg);*/
+    background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+    background-color: #036;
+    background-attachment: fixed;
+    background-repeat: repeat, repeat, repeat ,no-repeat;
+}

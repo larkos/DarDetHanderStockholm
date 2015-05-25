@@ -1,0 +1,40 @@
+﻿@model List<EventsIStockholm.Models.MyEvent>
+
+@{
+    
+}
+@*<script type="text/javascript" src="~/js/Cool.js"></script>*@
+@*<script type="text/javascript" src="~/js/gridScrollFx.js"></script>*@
+
+
+<h2>@ViewBag.Title</h2>
+
+<section class="grid-wrap" id="searchresult" }">
+    <ul class="grid swipe-down" id="grid">
+       
+
+        @foreach (var Ev in Model)
+        {
+            <li>
+        <a href="@Ev.EventUrl"><img src="@Ev.ImageUrl" alt="bild kunde inte laddas" width="250" height="250"><h3>@Ev.EventName</h3></a>
+                <div>
+                    <p>@Html.Raw(Ev.ShortDescription)></p>
+                </div>
+            </li>
+        }
+        <!-- ... -->
+    </ul>
+</section>
+
+ <script src="~/js/masonry.pkgd.min.js"></script>
+<script src="~/js/imagesloaded.pkgd.min.js"></script>
+<script src="~/js/classie.js"></script>
+<script src="~/js/colorfinder-1.1.js"></script>
+<script src="~/js/gridScrollFx.js"></script>
+<script>
+
+    new GridScrollFx(document.getElementById('grid'), {
+        viewportFactor: 0.4
+    });
+
+</script>
